@@ -1,0 +1,21 @@
+model = AutoModelForCausalLM.from_pretrained("zhangfaen/Florence-2-large-ft", trust_remote_code=True).to(device)
+processor = AutoProcessor.from_pretrained("zhangfaen/Florence-2-large-ft", trust_remote_code=True)
+
+(Pdb++) sum([p.numel() for p in model.parameters()])
+822693888
+(Pdb++) sum([p.numel() for p in model.parameters() if p.requires_grad ])
+822693888
+(Pdb++) 
+
+
+in /home/zhangfaen/miniconda3/envs/florence2-finetuning/lib/python3.11/site-packages/transformers/modeling_utils.py:3270
+elif       os.path.isfile(                                                                                                                
+3270                         os.path.join(pretrained_model_name_or_path, subfolder, _add_variant(WEIGHTS_NAME, variant))                                     
+3271                     ):                                                                                                                                  
+3272                         # Load from a PyTorch checkpoint                                                                                                
+3273  ->                     archive_file = os.path.join(                                                                                                    
+3274                             pretrained_model_name_or_path, subfolder, _add_variant(WEIGHTS_NAME, variant)                                               
+3275                         )     
+# WEIGHTS_NAME is pytorch_model.bin
+(Pdb++) archive_file
+'/home/zhangfaen/dev/Florence-2-large-ft/pytorch_model.bin'
