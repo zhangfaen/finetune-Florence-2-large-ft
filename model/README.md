@@ -1,20 +1,6 @@
----
-license: mit
-license_link: https://huggingface.co/microsoft/Florence-2-large-ft/resolve/main/LICENSE
-
-pipeline_tag: image-to-text
-tags:
-- vision
----
-
 # Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks
 
 ## Model Summary
-
-This is a copy of Microsoft's model with a few fixes. The PRs for the fixes are open on the original model but until they merge I'm using this one to have everything set up correctly. 
-
-
-This Hub repository contains a HuggingFace's `transformers` implementation of Florence-2 model from Microsoft.
 
 Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks.  Florence-2 can interpret simple text prompts to perform tasks like captioning, object detection, and segmentation. It leverages our FLD-5B dataset, containing 5.4 billion annotations across 126 million images, to master multi-task learning. The model's sequence-to-sequence architecture enables it to excel in both zero-shot and fine-tuned settings, proving to be a competitive vision foundation model. 
 
